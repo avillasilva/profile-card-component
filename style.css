@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--dark-grayish-blue);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-position: left -213px top -190px, right -300px bottom -190px;
+  background-repeat: no-repeat;
+  background-size: 110%, 130%;
+
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card {
+  background-image: url(./images/bg-pattern-card.svg);
+  width: 326px;
+  border: none;
+  border-radius: 15px;
+}
+
+.profile {
+  background-color: white;
+  border: none;
+  border-radius: 0 0 15px 15px;
+  margin-top: 30px;
+  padding-top: 80px;
+  font-size: 0.75rem;
+}
+
+.stats {
+  border-top: 1px solid rgb(223, 220, 220);
+  display: flex;
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+  justify-content: space-evenly;
+  padding: 25px 0;
+  margin-top: 30px;
+}
+
+h1,
+h2 {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+strong {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+img {
+  border: 5px solid white;
+  border-radius: 50%;
+  position: relative;
+  top: 85px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  top: 20px;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+    .container {
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        /* 80% */
+        /* background-position: left -375px top -700px, right -310px bottom -792px; */
+        background-position: left -383px top -700px, right -100px bottom -477px;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 80%, 57%;
+    }
+}
